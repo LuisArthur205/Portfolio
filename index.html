@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    </head>
+<body>
+
+    <div class="particulas"></div>
+
+    <nav class="navegacao">
+        <ul class="menu">
+            <li><a class="menu-link" href="#inicio">Início</a></li>
+            <li><a class="menu-link" href="#sobre">Sobre</a></li>
+            <li><a class="menu-link" href="#projetos">Projetos</a></li>
+            <li><a class="menu-link" href="#contatos">Veja mais</a></li>
+        </ul>
+    </nav>
+
+    <main id="inicio" class="cabecalho">
+        <img src="IMG/Foto.jpg" alt="Foto de Perfil" class="foto-perfil">
+        <h1>Luís Arthur</h1>
+        <p class="cabecalho-subtitulo">desenvolvedor</p>
+    </main>
+
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo">Sobre Mim</h2>
+        <div class="sobre-caixa">
+            <p class="sobre-paragrafo">
+                Olá! Meu nome é Luís Arthur, tenho 20 anos e sou estudante de Ciência da Computação, cursando atualmente o quarto período noturno da faculdade. Ao longo da minha jornada, adquiri proficiência em diversas tecnologias e áreas, incluindo as linguagens de programação Python e Java, além de domínio em ferramentas de Análise de Dados, como o Excel e o Power BI, para manipulação, visualização e geração de insights valiosos a partir de dados.
+            </p>
+        </div>
+    </section>
+
+    <section id="projetos" class="projetos">
+    <h2 class="projetos-titulo">Meus Projetos</h2>
+    <div class="projetos-caixa">
+
+        <a href="https://github.com/LuisArthur205/Atividade-Gif-e-Canvas" target="_blank" class="projetos-link-card">
+            <div class="projetos-card">
+                <img src="IMG/Canvas.png" alt="Ilustração com canvas" class="projetos-imagem">
+                <div class="caixa-textos-projeto">
+                    <h3 class="info-projetos">Ilustração com canvas</h3>
+                    <p class="paragrafo-projetos">Representação Gráfica de Árvore utilizando canvas.</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://github.com/LuisArthur205/Atividade-Gif-e-Canvas" target="_blank" class="projetos-link-card">
+            <div class="projetos-card">
+                <img src="IMG/GIF.png" alt="GIF de explosão" class="projetos-imagem">
+                <div class="caixa-textos-projeto">
+                    <h3 class="info-projetos">GIF de explosão</h3>
+                    <p class="paragrafo-projetos">Manipulação de imagens utilizando sprites.</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://github.com/LuisArthur205/Animacao-do-model-gltf" target="_blank" class="projetos-link-card">
+            <div class="projetos-card">
+                <img src="IMG/Carro.png" alt="Carro 3D" class="projetos-imagem">
+                <div class="caixa-textos-projeto">
+                    <h3 class="info-projetos">Carro 3D</h3>
+                    <p class="paragrafo-projetos">Visualização 3d de modelo GLTF com Three.js.</p>
+                </div>
+            </div>
+        </a>
+        
+    </div>
+    
+
+    <section id="contatos" class="contatos">
+        <h2 class="contatos-titulo">Veja mais</h2>
+    
+        <div id="three-container" class="modelo-3d"></div> 
+        
+        <div class="caixa-links-contato"> 
+            
+            <a href="https://github.com/LuisArthur205" target="_blank" class="botao-form link-github">
+                <img src="IMG/github.svg" alt="Ícone GitHub" class="icone-contato">
+                <span>@LuisArthur205</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/luis-arthur-maia-cortez-54025037a/" target="_blank" class="botao-form link-linkedin">
+                <img src="IMG/linkedin.svg" alt="Ícone LinkedIn" class="icone-contato">
+                <span>@LuisArthur</span>
+            </a>
+
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/three@0.137.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.137.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.137.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
